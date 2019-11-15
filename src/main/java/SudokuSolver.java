@@ -1,3 +1,4 @@
+import Algorithms.BackTracking;
 import model.SudokuReader;
 import java.util.Scanner;
 
@@ -11,7 +12,12 @@ public class SudokuSolver{
         SudokuReader sr= new SudokuReader();
 
         String path="Input\\"+inputFileName;
-        sr.getPuzzle(path);
+        String[][] puzzle=null;
+
+        BackTracking backTracking= sr.getPuzzle(path);
+        backTracking.solveSudoku();
+        backTracking.printSolution();
+
     }
 
 }

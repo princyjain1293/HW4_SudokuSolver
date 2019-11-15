@@ -1,14 +1,23 @@
 package Algorithms;
 
+
 public class BackTracking {
-    public static int[][] grid;
-    public static int size;
+    public String[][] puzzle;
+    public int size;
+    public String[] domain;
+
+
+    public BackTracking(String[][] puzzle, int size,String[] domain){
+        this.puzzle=puzzle;
+        this.size=size;
+        this.domain=domain;
+    }
 
     public int[] findBlankLocation(){
         int[] cell = new int[2];
         for(int i=0;i<size;i++){
             for(int j=0;j<size;j++){
-                if(grid[i][j]==0){
+                if(puzzle[i][j]=="0"){
                     cell[0]=i;
                     cell[1]=j;
                     return cell;
@@ -20,30 +29,30 @@ public class BackTracking {
         cell[1]=-1;
         return cell;
     }
-    public boolean UsedInRow(int row,int n){
+    public boolean UsedInRow(int row,String n){
         for(int i=0;i<size;i++){
-            if(grid[row][i]==n)
+            if(puzzle[row][i].equals(n))
                 return true;
         }
         return false;
     }
-    public boolean UsedInColumn(int col,int n){
+    public boolean UsedInColumn(int col,String n){
         for(int i=0;i<size;i++){
-            if(grid[i][col]==n)
+            if(puzzle[i][col].equals(n))
                 return true;
         }
         return false;
     }
-    public boolean UsedInBox(int boxStartRow,int boxStartCol,int n){
+    public boolean UsedInBox(int boxStartRow,int boxStartCol,String n){
         for(int i=0;i<3;i++){
             for(int j=0;j<3;j++){
-                if(grid[i+boxStartRow][j+boxStartCol]==n)
+                if(puzzle[i+boxStartRow][j+boxStartCol].equals(n))
                     return true;
             }
         }
         return false;
     }
-    public boolean isSafe(int row, int col, int n){
+    public boolean isSafe(int row, int col, String n){
         if(!UsedInRow(row,n) && !UsedInColumn(col,n) && !UsedInBox(row-row%3,col-col%3,n))
             return true;
         return false;
@@ -54,16 +63,25 @@ public class BackTracking {
         int[] blankCell=findBlankLocation();
         row= blankCell[0];
         col=blankCell[1];
+
         if(row==-1)
             return true;
-        for(int i=1;i<=size;i++){
-            if(isSafe(row,col,i)){
-                grid[row][col]=i;
+        for(String s:domain){
+            if(isSafe(row,col,s)){
+                puzzle[row][col]=s;
                 if(solveSudoku())
                     return true;
-                grid[row][col]=0;
+                puzzle[row][col]="0";
             }
         }
         return false;
+    }
+    public void printSolution(){
+        for(int i=0;i<size;i++){
+            for(int j=0;j<size;j++){
+                System.out.print(puzzle[i][j]);
+            }
+            System.out.println();
+        }
     }
 }
