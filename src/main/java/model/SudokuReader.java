@@ -1,6 +1,8 @@
 package model;
 
 import Algorithms.BackTracking;
+import Algorithms.DepthFirstSearch;
+import Algorithms.SudokuAlgorithms;
 
 import java.io.BufferedReader;
 
@@ -8,7 +10,7 @@ import java.io.FileReader;
 
 
 public class SudokuReader {
-    public BackTracking getPuzzle(String inputFileName) {
+    public SudokuAlgorithms getPuzzle(String inputFileName, String type) {
         String[][] puzzle = null;
         //List<String> domain = new ArrayList<>();
         int side = 0;
@@ -54,8 +56,16 @@ public class SudokuReader {
 
             System.out.println();
         }
-        BackTracking backTracking = new BackTracking(puzzle, side, domain);
-        return backTracking;
+        SudokuAlgorithms algo=null;
+
+        if(type.equals("Backtracking")){
+            algo= new BackTracking(puzzle,side,domain);
+        }
+        else if(type.equals("DepthFirstSearch")){
+            algo = new DepthFirstSearch(puzzle, side, domain);
+        }
+
+        return algo;
     }
     public static String[] readRow(String line, int side){
         String[] row= new String[side];
