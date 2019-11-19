@@ -1,4 +1,5 @@
 import Algorithms.BackTracking;
+import Algorithms.SudokuAlgorithms;
 import model.SudokuReader;
 import java.util.Scanner;
 
@@ -14,9 +15,9 @@ public class SudokuSolver{
         String path="Input\\"+inputFileName;
         String[][] puzzle=null;
 
-        BackTracking backTracking= sr.getPuzzle(path);
-        backTracking.solveSudoku();
-        backTracking.printSolution();
+        SudokuAlgorithms backTracking= sr.getPuzzle(path);
+        backTracking.solve();
+        //backTracking.printSolution(solvable);
 
     }
 

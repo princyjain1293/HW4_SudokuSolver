@@ -1,7 +1,7 @@
 package Algorithms;
 
 
-public class BackTracking {
+public class BackTracking extends SudokuAlgorithms{
     public String[][] puzzle;
     public int size;
     public String[] domain;
@@ -43,9 +43,10 @@ public class BackTracking {
         }
         return false;
     }
+    int root = (int)Math.sqrt(size);
     public boolean UsedInBox(int boxStartRow,int boxStartCol,String n){
-        for(int i=0;i<3;i++){
-            for(int j=0;j<3;j++){
+        for(int i=0;i<root;i++){
+            for(int j=0;j<root;j++){
                 if(puzzle[i+boxStartRow][j+boxStartCol].equals(n))
                     return true;
             }
@@ -76,12 +77,23 @@ public class BackTracking {
         }
         return false;
     }
-    public void printSolution(){
-        for(int i=0;i<size;i++){
-            for(int j=0;j<size;j++){
-                System.out.print(puzzle[i][j]);
+    public void printSolution(boolean solvable){
+        if(solvable){
+            for(int i=0;i<size;i++){
+                for(int j=0;j<size;j++){
+                    System.out.print(puzzle[i][j]);
+                }
+                System.out.println();
             }
-            System.out.println();
         }
+        else{
+            System.out.println("The sudoku puzzle is not solvable");
+        }
+
+
     }
+    public String[][] getPuzzle(){
+        return puzzle;
+    }
+
 }

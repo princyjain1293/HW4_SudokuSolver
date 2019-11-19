@@ -6,12 +6,9 @@ import java.io.BufferedReader;
 
 import java.io.FileReader;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 public class SudokuReader {
-    public BackTracking getPuzzle(String inputFileName) throws Exception {
+    public BackTracking getPuzzle(String inputFileName) {
         String[][] puzzle = null;
         //List<String> domain = new ArrayList<>();
         int side = 0;
@@ -20,6 +17,11 @@ public class SudokuReader {
             BufferedReader br = new BufferedReader(new FileReader(inputFileName));
 
             side = Integer.valueOf(br.readLine());
+            double sq= Math.sqrt(side);
+            if(sq-Math.floor(sq)!=0){
+                System.out.println("Array must be a perfect square");
+                System.exit(1);
+            }
             domain = null;
             domain = br.readLine().split(" ");
             for (String c : domain) {
