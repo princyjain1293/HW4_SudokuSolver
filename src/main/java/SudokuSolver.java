@@ -1,4 +1,6 @@
 import Algorithms.BackTracking;
+import Algorithms.DepthFirstSearch;
+import Algorithms.StochasticSearch;
 import Algorithms.SudokuAlgorithms;
 import model.SudokuReader;
 import model.SudokuWriter;
@@ -21,13 +23,22 @@ public class SudokuSolver{
 
         String inputPath="Input\\"+inputFileName;
         String outputPath="Output\\"+outputFileName;
-        String[][] puzzle=null;
+        SudokuAlgorithms sudokuAlgorithms=null;
         SudokuWriter sudokuWriter= new SudokuWriter();
 
-        SudokuAlgorithms sudokuAlgorithms= sr.getPuzzle(inputPath,outputPath,type,sudokuWriter);
-        //SudokuAlgorithms depthFirstSearch= sr.getPuzzle(path);
+        sr.getPuzzle(inputPath);
+        if(type==1){
+            sudokuAlgorithms= new BackTracking(sr.getPuzzle(),sr.getSide(),sr.getDomain(),outputPath,sudokuWriter);
+        }
+        else if(type==2){
+            sudokuAlgorithms=new DepthFirstSearch(sr.getPuzzle(),sr.getSide(),sr.getDomain(),outputPath,sudokuWriter);
+        }
+        else if(type==3){
+            sudokuAlgorithms= new StochasticSearch(sr.getPuzzle(),sr.getSide(),sr.getDomain(),outputPath,sudokuWriter);
+        }
+
         sudokuAlgorithms.solve();
-        //backTracking.printSolution(solvable);
+
 
     }
 

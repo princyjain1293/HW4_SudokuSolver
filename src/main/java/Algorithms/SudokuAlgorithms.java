@@ -1,9 +1,4 @@
 package Algorithms;
-
-import model.SudokuWriter;
-
-import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
 
 public abstract class SudokuAlgorithms {
@@ -18,21 +13,15 @@ public abstract class SudokuAlgorithms {
         }
         System.out.println("Total Time Taken: " + ((stop - start) / 1000) + " secs");
         //System.out.println("Number of Steps: " + numberOfSteps);
+
     }
+    public double getTime(){return (stop - start) / 1000;}
 
     protected void startTimer() {
         start = System.currentTimeMillis();
+        System.out.println(start);
     }
-//    protected void writeOutput(String outputName, String[][] solution, int size) throws IOException {
-//        File file = new File("Output\\"+outputName);
-//        FileWriter writer= new FileWriter(file);
-//        writer.write("Solution:");
-//        for(int i=0;i<size;i++){
-//            for(int j=0;j<size;j++)
-//                writer.write(solution[i][j]+" ");
-//            writer.write("\n");
-//        }
-//    }
+
 
     public abstract boolean solveSudoku();
     public abstract String[][] printSolution(boolean solvable) throws IOException;

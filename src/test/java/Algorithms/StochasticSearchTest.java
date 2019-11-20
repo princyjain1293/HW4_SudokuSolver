@@ -4,14 +4,11 @@ import model.SudokuReader;
 import model.SudokuWriter;
 import org.junit.Test;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
 
 import static org.junit.Assert.*;
 
-public class BackTrackingTest {
+public class StochasticSearchTest {
 
     @Test
     public void testValidConstructor() throws IOException {
@@ -21,7 +18,7 @@ public class BackTrackingTest {
         SudokuReader sudokuReader= new SudokuReader();
         SudokuWriter sudokuWriter=new SudokuWriter();
         sudokuReader.getPuzzle(inputPath);
-        SudokuAlgorithms sudokuAlgorithms= new BackTracking(sudokuReader.getPuzzle(),sudokuReader.getSide(),sudokuReader.getDomain(),outputPath,sudokuWriter);
+        SudokuAlgorithms sudokuAlgorithms= new StochasticSearch(sudokuReader.getPuzzle(),sudokuReader.getSide(),sudokuReader.getDomain(),outputPath,sudokuWriter);
         sudokuAlgorithms.solveSudoku();
         String[][] actualPuzzle=sudokuAlgorithms.getPuzzle();
         String[][] puzzle= {{"2","4","3","1"},{"1","3","2","4"},{"3","1","4","2"},{"4","2","1","3"}};
@@ -29,8 +26,7 @@ public class BackTrackingTest {
     }
 
     @Test
-    public void testFindBlankLocation() {
-
+    public void findBlankLocation() {
     }
 
     @Test
@@ -54,15 +50,23 @@ public class BackTrackingTest {
     }
 
     @Test
+    public void printSolution() {
+    }
+
+    @Test
+    public void getPuzzle() {
+    }
+    @Test
     public void testPrintSolution() throws IOException {
         String inputPath="Input\\Puzzle-4x4-0101.txt";
         String outputPath="Output\\Puzzle-4x4-0101.txt";
-        int type=1;
+
         SudokuReader sudokuReader= new SudokuReader();
         SudokuWriter sudokuWriter= new SudokuWriter();
         sudokuReader.getPuzzle(inputPath);
-        SudokuAlgorithms sudokuAlgorithms= new BackTracking(sudokuReader.getPuzzle(),sudokuReader.getSide(),sudokuReader.getDomain(),outputPath,sudokuWriter);
+        SudokuAlgorithms sudokuAlgorithms= new StochasticSearch(sudokuReader.getPuzzle(),sudokuReader.getSide(),sudokuReader.getDomain(),outputPath,sudokuWriter);
         boolean solvable=sudokuAlgorithms.solveSudoku();
         sudokuAlgorithms.printSolution(solvable);
     }
+
 }

@@ -1,21 +1,16 @@
 package model;
-
-import Algorithms.BackTracking;
-import Algorithms.DepthFirstSearch;
-import Algorithms.StochasticSearch;
-import Algorithms.SudokuAlgorithms;
-
 import java.io.BufferedReader;
-
 import java.io.FileReader;
 
-
 public class SudokuReader {
-    public SudokuAlgorithms getPuzzle(String inputFileName,String outputFileName, int type, SudokuWriter sudokuWriter) {
-        String[][] puzzle = null;
+    public String[][] puzzle = null;
+    public String[] domain = new String[0];
+    public int side=0;
+    public void getPuzzle(String inputFileName) {
+
         //List<String> domain = new ArrayList<>();
-        int side = 0;
-        String[] domain = new String[0];
+
+
         try {
             BufferedReader br = new BufferedReader(new FileReader(inputFileName));
 
@@ -57,19 +52,7 @@ public class SudokuReader {
 
             System.out.println();
         }
-        SudokuAlgorithms algo=null;
 
-        if(type==1){
-            algo= new BackTracking(puzzle,side,domain,outputFileName,sudokuWriter);
-        }
-        else if(type==2){
-            algo = new DepthFirstSearch(puzzle, side, domain,outputFileName,sudokuWriter);
-        }
-        else if(type==3){
-            algo=new StochasticSearch(puzzle,side,domain,outputFileName,sudokuWriter);
-        }
-
-        return algo;
     }
     public static String[] readRow(String line, int side){
         String[] row= new String[side];
@@ -83,4 +66,7 @@ public class SudokuReader {
         }
         return row;
     }
+    public int getSide(){return side;}
+    public String[][] getPuzzle(){return puzzle;};
+    public String[] getDomain(){return domain;}
 }
