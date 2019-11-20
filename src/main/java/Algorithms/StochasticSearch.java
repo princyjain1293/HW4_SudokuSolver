@@ -3,14 +3,18 @@ package Algorithms;
 
 import model.SudokuWriter;
 
-public class DepthFirstSearch extends SudokuAlgorithms{
+import java.util.ArrayList;
+import java.util.Random;
+
+public class StochasticSearch extends SudokuAlgorithms{
     public String[][] puzzle;
     public int size;
     public String[] domain;
     public String outputFileName;
     SudokuWriter sudokuWriter;
 
-    public DepthFirstSearch(String[][] puzzle, int size,String[] domain,String outputFileName,SudokuWriter sudokuWriter){
+
+    public StochasticSearch(String[][] puzzle, int size,String[] domain,String outputFileName,SudokuWriter sudokuWriter){
         this.puzzle=puzzle;
         this.size=size;
         this.domain=domain;
@@ -20,8 +24,8 @@ public class DepthFirstSearch extends SudokuAlgorithms{
 
     public int[] findBlankLocation(){
         int[] cell = new int[2];
-        for(int j=0;j<size;j++){
-            for(int i=0;i<size;i++){
+        for(int i=0;i<size;i++){
+            for(int j=0;j<size;j++){
                 if(puzzle[i][j]=="0"){
                     cell[0]=i;
                     cell[1]=j;
@@ -72,13 +76,25 @@ public class DepthFirstSearch extends SudokuAlgorithms{
 
         if(row==-1)
             return true;
-        for(String s:domain){
+
+        ArrayList<String> domainArray = new ArrayList<>();
+        for(int i=0;i<domain.length;i++)
+        {
+            domainArray.add(domain[i]);
+        }
+
+        Random random = new Random();
+
+        while (domainArray.size()>0){
+            int i=random.nextInt(domainArray.size());
+            String s=domainArray.get(i);
             if(isSafe(row,col,s)){
                 puzzle[row][col]=s;
                 if(solveSudoku())
                     return true;
                 puzzle[row][col]="0";
             }
+            domainArray.remove(s);
         }
         return false;
     }

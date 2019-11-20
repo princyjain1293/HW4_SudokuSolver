@@ -1,16 +1,24 @@
 package Algorithms;
 
 
+import model.SudokuWriter;
+
+import java.io.IOException;
+
 public class BackTracking extends SudokuAlgorithms{
     public String[][] puzzle;
     public int size;
     public String[] domain;
+    public String outputFileName;
+    SudokuWriter sudokuWriter;
 
 
-    public BackTracking(String[][] puzzle, int size,String[] domain){
+    public BackTracking(String[][] puzzle, int size,String[] domain,String outputFileName,SudokuWriter sudokuWriter){
         this.puzzle=puzzle;
         this.size=size;
         this.domain=domain;
+        this.outputFileName=outputFileName;
+        this.sudokuWriter=sudokuWriter;
     }
 
     public int[] findBlankLocation(){
@@ -77,7 +85,7 @@ public class BackTracking extends SudokuAlgorithms{
         }
         return false;
     }
-    public void printSolution(boolean solvable){
+    public String[][] printSolution(boolean solvable) throws IOException {
         if(solvable){
             for(int i=0;i<size;i++){
                 for(int j=0;j<size;j++){
@@ -90,6 +98,9 @@ public class BackTracking extends SudokuAlgorithms{
             System.out.println("The sudoku puzzle is not solvable");
         }
 
+        sudokuWriter.writeOutput(outputFileName,puzzle,size);
+
+        return puzzle;
 
     }
     public String[][] getPuzzle(){
