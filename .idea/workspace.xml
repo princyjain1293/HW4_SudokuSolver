@@ -2,16 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ddcc345b-ff7a-44f6-b163-db54add0aba8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Algorithms/OnlyOneValueTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Input/Puzzle-4x4-0001.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Input/Puzzle-4x4-0001.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Input/Puzzle-4x4-0201.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Input/Puzzle-4x4-0201.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Output/Puzzle-4x4-0101.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Puzzle-4x4-0101.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/Algorithms/SudokuAlgorithms.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Algorithms/SudokuAlgorithms.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/SudokuSolver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/SudokuSolver.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/model/SudokuReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/model/SudokuReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/model/Validator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/model/Validator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/model/ValidatorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/model/ValidatorTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/SudokuReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/SudokuReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Validator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/model/ValidatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/model/ValidatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/Algorithms/BackTrackingTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/Algorithms/BackTrackingTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Algorithms/SudokuAlgorithms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Algorithms/SudokuAlgorithms.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SudokuSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SudokuSolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Algorithms/BackTrackingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Algorithms/BackTrackingTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -29,12 +30,25 @@
     <SUITE FILE_PATH="coverage/HW4_SudokuSolver$BackTrackingTest.ic" NAME="BackTrackingTest Coverage Results" MODIFIED="1574286949299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Algorithms.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/HW4_SudokuSolver$Algorithms_in_HW4_SudokuSolver_test.ic" NAME="Algorithms in HW4_SudokuSolver.test Coverage Results" MODIFIED="1574297248836" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>Algorithms.*</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/HW4_SudokuSolver$BackTrackingTest_testValidConstructor.ic" NAME="BackTrackingTest.testValidConstructor Coverage Results" MODIFIED="1574214403273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Algorithms.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/HW4_SudokuSolver$ValidatorTest_testValidateValues.ic" NAME="ValidatorTest.testValidateValues Coverage Results" MODIFIED="1574300558879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>model.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/HW4_SudokuSolver$ValidatorTest_testInvalidValidatePerfectSquares.ic" NAME="ValidatorTest.testInvalidValidatePerfectSquares Coverage Results" MODIFIED="1574300297830" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>model.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/HW4_SudokuSolver$SudokuAlgorithmsTest.ic" NAME="SudokuAlgorithmsTest Coverage Results" MODIFIED="1574288170961" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Algorithms.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/HW4_SudokuSolver$OnlyOneValueTest.ic" NAME="OnlyOneValueTest Coverage Results" MODIFIED="1574304736466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Algorithms.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/HW4_SudokuSolver$Algorithms_in_HW4_SudokuSolver_test.ic" NAME="Algorithms in HW4_SudokuSolver.test Coverage Results" MODIFIED="1574297248836" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Algorithms.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/HW4_SudokuSolver$SudokuSolver.ic" NAME="SudokuSolver Coverage Results" MODIFIED="1574303761102" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/HW4_SudokuSolver$DepthFirstSearchTest.ic" NAME="DepthFirstSearchTest Coverage Results" MODIFIED="1574287188825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Algorithms.*</FILTER>
     </SUITE>
@@ -45,18 +59,9 @@
       <FILTER>Algorithms.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/HW4_SudokuSolver$All_in_HW4_SudokuSolver_test.ic" NAME="All in HW4_SudokuSolver.test Coverage Results" MODIFIED="1574299695271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/HW4_SudokuSolver$ValidatorTest_testValidateValues.ic" NAME="ValidatorTest.testValidateValues Coverage Results" MODIFIED="1574300558879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>model.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/HW4_SudokuSolver$ValidatorTest_testInvalidValidatePerfectSquares.ic" NAME="ValidatorTest.testInvalidValidatePerfectSquares Coverage Results" MODIFIED="1574300297830" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>model.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/HW4_SudokuSolver$SudokuAlgorithmsTest.ic" NAME="SudokuAlgorithmsTest Coverage Results" MODIFIED="1574288170961" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>Algorithms.*</FILTER>
-    </SUITE>
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="68" />
+    <option name="myElementSize" value="69" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -85,8 +90,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/SudokuSolver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="41" column="84" selection-start-line="41" selection-start-column="84" selection-end-line="41" selection-end-column="84" />
+            <state relative-caret-position="52">
+              <caret line="44" column="63" selection-start-line="44" selection-start-column="63" selection-end-line="44" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -95,42 +100,14 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Algorithms/BackTracking.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Algorithms/OnlyOneValue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-10">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="-45">
+              <caret line="67" column="44" selection-start-line="67" selection-start-column="44" selection-end-line="67" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Algorithms/BackTrackingTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="62" column="42" selection-start-line="60" selection-start-column="8" selection-end-line="62" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/model/SudokuWriterTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Algorithms/DepthFirstSearch.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1323">
-              <caret line="110" selection-start-line="110" selection-end-line="110" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="method#StochasticSearch#0;class#OnlyOneValue#0" />
+                <element signature="e#772#780#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -139,8 +116,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Algorithms/StochasticSearch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1596">
-              <caret line="127" selection-start-line="127" selection-end-line="127" />
+            <state relative-caret-position="-330">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -148,38 +124,38 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/model/SudokuReaderTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/Validator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/model/ValidatorTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Algorithms/OnlyOneValueTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="52">
+              <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Algorithms/BackTrackingTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="66" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Algorithms/SudokuAlgorithms.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/model/SudokuReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="20" column="12" lean-forward="true" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+            <state relative-caret-position="528">
+              <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -214,8 +190,6 @@
         <option value="$PROJECT_DIR$/src/main/java/model/Position.java" />
         <option value="$PROJECT_DIR$/src/test/java/Algorithms/SudokuAlgorithms.java" />
         <option value="$PROJECT_DIR$/src/main/java/Algorithms/SudokuAlgorithms.java" />
-        <option value="$PROJECT_DIR$/src/main/java/SudokuSolver.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Algorithms/BackTrackingTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/SudokuWriter.java" />
         <option value="$PROJECT_DIR$/src/test/java/Algorithms/DepthFirstSearchTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/Algorithms/StochasticSearchTest.java" />
@@ -228,6 +202,10 @@
         <option value="$PROJECT_DIR$/src/main/java/model/Validator.java" />
         <option value="$PROJECT_DIR$/src/test/java/model/ValidatorTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/SudokuReader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/SudokuSolver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Algorithms/OnlyOneValue.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Algorithms/BackTrackingTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Algorithms/OnlyOneValueTest.java" />
       </list>
     </option>
   </component>
@@ -321,14 +299,14 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574301051817" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574304964941" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="model" />
       <recent name="Algorithms" />
+      <recent name="model" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -346,11 +324,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ValidatorTest">
-    <configuration name="All in HW4_SudokuSolver.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.OnlyOneValueTest">
+    <configuration name="SudokuSolver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SudokuSolver" />
+      <module name="HW4_SudokuSolver.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OnlyOneValueTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HW4_SudokuSolver.test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Algorithms.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Algorithms" />
+      <option name="MAIN_CLASS_NAME" value="Algorithms.OnlyOneValueTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -386,22 +378,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ValidatorTest.testValidatePerfectSquares" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="HW4_SudokuSolver.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.ValidatorTest" />
-      <option name="METHOD_NAME" value="testValidatePerfectSquares" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ValidatorTest.testValidateValues" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HW4_SudokuSolver.test" />
       <extension name="coverage">
@@ -420,11 +396,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.OnlyOneValueTest" />
+        <item itemvalue="Application.SudokuSolver" />
         <item itemvalue="JUnit.ValidatorTest" />
         <item itemvalue="JUnit.ValidatorTest.testValidateValues" />
         <item itemvalue="JUnit.ValidatorTest.testInvalidValidatePerfectSquares" />
-        <item itemvalue="JUnit.All in HW4_SudokuSolver.test" />
-        <item itemvalue="JUnit.ValidatorTest.testValidatePerfectSquares" />
       </list>
     </recent_temporary>
   </component>
@@ -442,21 +418,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ValidatorTest - 2019.11.20 at 18h 06m 00s.xml">
-      <configuration name="ValidatorTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ValidatorTest - 2019.11.20 at 18h 11m 27s.xml">
-      <configuration name="ValidatorTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ValidatorTest - 2019.11.20 at 18h 25m 48s.xml">
-      <configuration name="ValidatorTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_HW4_SudokuSolver_test - 2019.11.20 at 18h 28m 54s.xml">
-      <configuration name="All in HW4_SudokuSolver.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ValidatorTest_testInvalidValidatePerfectSquares - 2019.11.20 at 18h 32m 44s.xml">
-      <configuration name="ValidatorTest.testInvalidValidatePerfectSquares" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ValidatorTest_testInvalidValidatePerfectSquares - 2019.11.20 at 18h 38m 58s.xml">
       <configuration name="ValidatorTest.testInvalidValidatePerfectSquares" configurationId="JUnit" />
     </history-entry>
@@ -472,12 +433,58 @@
     <history-entry file="ValidatorTest - 2019.11.20 at 18h 49m 19s.xml">
       <configuration name="ValidatorTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="OnlyOneValueTest - 2019.11.20 at 19h 47m 11s.xml">
+      <configuration name="OnlyOneValueTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OnlyOneValueTest - 2019.11.20 at 19h 51m 34s.xml">
+      <configuration name="OnlyOneValueTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OnlyOneValueTest - 2019.11.20 at 19h 52m 54s.xml">
+      <configuration name="OnlyOneValueTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OnlyOneValueTest - 2019.11.20 at 19h 54m 24s.xml">
+      <configuration name="OnlyOneValueTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OnlyOneValueTest - 2019.11.20 at 19h 56m 02s.xml">
+      <configuration name="OnlyOneValueTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.25718608" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25718608" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.6628478" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Build" order="10" weight="0.3289689" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3289689" />
+      <window_info anchor="right" id="Coverage" order="0" sideWeight="0.5022625" side_tool="true" weight="0.24962178" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" sideWeight="0.49773756" weight="0.24962178" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Gradle" order="9" weight="0.32980332" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25718608" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -496,7 +503,7 @@
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.3289689" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3289689" />
-      <window_info active="true" anchor="right" id="Coverage" order="0" sideWeight="0.5022625" side_tool="true" visible="true" weight="0.24962178" />
+      <window_info anchor="right" id="Coverage" order="0" sideWeight="0.5022625" side_tool="true" weight="0.24962178" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" sideWeight="0.49773756" weight="0.24962178" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
@@ -506,7 +513,7 @@
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Gradle" order="9" weight="0.32980332" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -576,13 +583,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Algorithms/SudokuAlgorithms.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Algorithms/SudokuAlgorithms.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Algorithms/DepthFirstSearchTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="411">
@@ -614,33 +614,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SudokuSolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="41" column="84" selection-start-line="41" selection-start-column="84" selection-end-line="41" selection-end-column="84" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Algorithms/BackTrackingTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="62" column="42" selection-start-line="60" selection-start-column="8" selection-end-line="62" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Algorithms/BackTracking.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Algorithms/DepthFirstSearch.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1323">
@@ -648,23 +621,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Algorithms/StochasticSearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1596">
-          <caret line="127" selection-start-line="127" selection-end-line="127" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/model/SudokuReaderTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -689,13 +645,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/SudokuReader.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/model/SudokuReaderTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="20" column="12" lean-forward="true" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+        <state relative-caret-position="432">
+          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Algorithms/BackTracking.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="112" column="4" selection-start-line="112" selection-start-column="4" selection-end-line="114" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/lang/NumberFormatException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SudokuSolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="44" column="63" selection-start-line="44" selection-start-column="63" selection-end-line="44" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Algorithms/BackTrackingTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="66" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Algorithms/StochasticSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-330">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Algorithms/SudokuAlgorithms.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Algorithms/OnlyOneValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-45">
+          <caret line="67" column="44" selection-start-line="67" selection-start-column="44" selection-end-line="67" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#StochasticSearch#0;class#OnlyOneValue#0" />
+            <element signature="e#772#780#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/SudokuReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Algorithms/OnlyOneValueTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
         </state>
       </provider>
     </entry>

@@ -25,7 +25,7 @@ public abstract class SudokuAlgorithms {
 
 
 
-    public abstract boolean solveSudoku();
+    public abstract boolean solveSudoku() throws IOException;
     public abstract String[][] printSolution(boolean solvable) throws IOException;
     public abstract String[][] getPuzzle();
     public final void solve() throws IOException {
