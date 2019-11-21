@@ -18,7 +18,7 @@ public class DepthFirstSearchTest {
         SudokuReader sudokuReader= new SudokuReader();
         SudokuWriter sudokuWriter=new SudokuWriter();
         sudokuReader.getPuzzle(inputPath);
-        SudokuAlgorithms sudokuAlgorithms= new DepthFirstSearch(sudokuReader.getPuzzle(),sudokuReader.getSide(),sudokuReader.getDomain(),outputPath,sudokuWriter);
+        SudokuAlgorithms sudokuAlgorithms= new DepthFirstSearch(sudokuReader.getBoard(),sudokuReader.getActualBoard(),sudokuReader.getSide(),sudokuReader.getDomain(),outputPath,sudokuWriter);
         sudokuAlgorithms.solveSudoku();
         String[][] actualPuzzle=sudokuAlgorithms.getPuzzle();
         String[][] puzzle= {{"2","4","3","1"},{"1","3","2","4"},{"3","1","4","2"},{"4","2","1","3"}};
@@ -64,7 +64,7 @@ public class DepthFirstSearchTest {
         SudokuReader sudokuReader= new SudokuReader();
         SudokuWriter sudokuWriter= new SudokuWriter();
         sudokuReader.getPuzzle(inputPath);
-        SudokuAlgorithms sudokuAlgorithms= new DepthFirstSearch(sudokuReader.getPuzzle(),sudokuReader.getSide(),sudokuReader.getDomain(),outputPath,sudokuWriter);
+        SudokuAlgorithms sudokuAlgorithms= new DepthFirstSearch(sudokuReader.getBoard(),sudokuReader.getActualBoard(),sudokuReader.getSide(),sudokuReader.getDomain(),outputPath,sudokuWriter);
         boolean solvable=sudokuAlgorithms.solveSudoku();
         sudokuAlgorithms.printSolution(solvable);
     }

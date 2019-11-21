@@ -18,7 +18,7 @@ public class SudokuAlgorithmsTest {
         SudokuReader sudokuReader= new SudokuReader();
         SudokuWriter sudokuWriter=new SudokuWriter();
         sudokuReader.getPuzzle(inputPath);
-        SudokuAlgorithms sudokuAlgorithms= new BackTracking(sudokuReader.getPuzzle(),sudokuReader.getSide(),sudokuReader.getDomain(),outputPath,sudokuWriter);
+        SudokuAlgorithms sudokuAlgorithms= new BackTracking(sudokuReader.getBoard(),sudokuReader.getActualBoard(),sudokuReader.getSide(),sudokuReader.getDomain(),outputPath,sudokuWriter);
         sudokuAlgorithms.solve();
         assertEquals(0.002,sudokuAlgorithms.getTime(),1.0);
     }

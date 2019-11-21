@@ -6,6 +6,7 @@ public class SudokuReader {
     public String[][] puzzle = null;
     public String[] domain = new String[0];
     public int side=0;
+    public String[][]  board=null;
     public void getPuzzle(String inputFileName) {
 
         //List<String> domain = new ArrayList<>();
@@ -29,7 +30,9 @@ public class SudokuReader {
 
             String line = br.readLine();
             puzzle = new String[side][];
+            board = new String[side][];
             puzzle[0] = readRow(line, side);
+            board[0] = readRow(line, side);
 
             int rowNum = 1;
             while ((line = br.readLine()) != null) {
@@ -37,11 +40,14 @@ public class SudokuReader {
                     System.out.println("Puzzle is not apt");
                     System.exit(1);
                 }
-                puzzle[rowNum++] = readRow(line, side);
+                puzzle[rowNum] = readRow(line, side);
+                board[rowNum++] = readRow(line, side);
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+
         for (int i = 0; i < side; i++) {
             for (int j = 0; j < side; j++) {
                 if (puzzle[i][j].equals("-")) {
@@ -67,6 +73,7 @@ public class SudokuReader {
         return row;
     }
     public int getSide(){return side;}
-    public String[][] getPuzzle(){return puzzle;};
+    public String[][] getBoard(){return puzzle;}
     public String[] getDomain(){return domain;}
+    public String[][] getActualBoard(){return board;}
 }

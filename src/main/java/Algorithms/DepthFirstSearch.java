@@ -3,20 +3,26 @@ package Algorithms;
 
 import model.SudokuWriter;
 
+import java.io.IOException;
+
 public class DepthFirstSearch extends SudokuAlgorithms{
     public String[][] puzzle;
     public int size;
     public String[] domain;
     public String outputFileName;
     SudokuWriter sudokuWriter;
+    public int count=0;
+    public String[][] board;
 
-    public DepthFirstSearch(String[][] puzzle, int size,String[] domain,String outputFileName,SudokuWriter sudokuWriter){
+    public DepthFirstSearch(String[][] puzzle,String[][] board, int size,String[] domain,String outputFileName,SudokuWriter sudokuWriter){
         this.puzzle=puzzle;
         this.size=size;
         this.domain=domain;
         this.outputFileName=outputFileName;
         this.sudokuWriter=sudokuWriter;
+        this.board=board;
     }
+
 
     public int[] findBlankLocation(){
         int[] cell = new int[2];
@@ -64,6 +70,7 @@ public class DepthFirstSearch extends SudokuAlgorithms{
         return false;
     }
     public boolean solveSudoku(){
+        count++;
         int row;
         int col;
         int[] blankCell=findBlankLocation();
@@ -82,7 +89,7 @@ public class DepthFirstSearch extends SudokuAlgorithms{
         }
         return false;
     }
-    public String[][] printSolution(boolean solvable){
+    public String[][] printSolution(boolean solvable) throws IOException {
         if(solvable){
             for(int i=0;i<size;i++){
                 for(int j=0;j<size;j++){
@@ -94,11 +101,13 @@ public class DepthFirstSearch extends SudokuAlgorithms{
         else{
             System.out.println("The sudoku puzzle is not solvable");
         }
+        sudokuWriter.writeToText(outputFileName,puzzle,board,domain,count,size,super.getTime(),"Depth First Search");
         return puzzle;
 
     }
     public String[][] getPuzzle(){
         return puzzle;
     }
+
 
 }

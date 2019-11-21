@@ -11,15 +11,21 @@ public class BackTracking extends SudokuAlgorithms{
     public String[] domain;
     public String outputFileName;
     SudokuWriter sudokuWriter;
+    public int count=0;
+    public String[][] board;
 
 
-    public BackTracking(String[][] puzzle, int size,String[] domain,String outputFileName,SudokuWriter sudokuWriter){
+
+    public BackTracking(String[][] puzzle,String[][] board, int size,String[] domain,String outputFileName,SudokuWriter sudokuWriter){
         this.puzzle=puzzle;
         this.size=size;
         this.domain=domain;
         this.outputFileName=outputFileName;
         this.sudokuWriter=sudokuWriter;
+        this.board=board;
     }
+
+
 
     public int[] findBlankLocation(){
         int[] cell = new int[2];
@@ -67,6 +73,7 @@ public class BackTracking extends SudokuAlgorithms{
         return false;
     }
     public boolean solveSudoku(){
+        count++;
         int row;
         int col;
         int[] blankCell=findBlankLocation();
@@ -98,7 +105,7 @@ public class BackTracking extends SudokuAlgorithms{
             System.out.println("The sudoku puzzle is not solvable");
         }
 
-        sudokuWriter.writeOutput(outputFileName,puzzle,size);
+        sudokuWriter.writeToText(outputFileName,puzzle,board,domain,count,size,super.getTime(),"Backtracking");
 
         return puzzle;
 
@@ -106,5 +113,7 @@ public class BackTracking extends SudokuAlgorithms{
     public String[][] getPuzzle(){
         return puzzle;
     }
+    //public String[][] getBoard(){return board;}
+
 
 }

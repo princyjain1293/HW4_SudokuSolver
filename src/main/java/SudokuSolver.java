@@ -4,6 +4,7 @@ import Algorithms.StochasticSearch;
 import Algorithms.SudokuAlgorithms;
 import model.SudokuReader;
 import model.SudokuWriter;
+import model.Validator;
 
 import java.util.Scanner;
 
@@ -25,16 +26,20 @@ public class SudokuSolver{
         String outputPath="Output\\"+outputFileName;
         SudokuAlgorithms sudokuAlgorithms=null;
         SudokuWriter sudokuWriter= new SudokuWriter();
-
         sr.getPuzzle(inputPath);
+        Validator validator= new Validator();
+        validator.validatePerfectSquares(sr.getBoard());
+        validator.validateValues(sr.getBoard());
+
+
         if(type==1){
-            sudokuAlgorithms= new BackTracking(sr.getPuzzle(),sr.getSide(),sr.getDomain(),outputPath,sudokuWriter);
+            sudokuAlgorithms= new BackTracking(sr.getBoard(),sr.getActualBoard(),sr.getSide(),sr.getDomain(),outputPath,sudokuWriter);
         }
         else if(type==2){
-            sudokuAlgorithms=new DepthFirstSearch(sr.getPuzzle(),sr.getSide(),sr.getDomain(),outputPath,sudokuWriter);
+            sudokuAlgorithms=new DepthFirstSearch(sr.getBoard(),sr.getActualBoard(),sr.getSide(),sr.getDomain(),outputPath,sudokuWriter);
         }
         else if(type==3){
-            sudokuAlgorithms= new StochasticSearch(sr.getPuzzle(),sr.getSide(),sr.getDomain(),outputPath,sudokuWriter);
+            sudokuAlgorithms= new StochasticSearch(sr.getBoard(),sr.getActualBoard(),sr.getSide(),sr.getDomain(),outputPath,sudokuWriter);
         }
 
         sudokuAlgorithms.solve();

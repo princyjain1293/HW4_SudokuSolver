@@ -6,6 +6,7 @@ public abstract class SudokuAlgorithms {
     private double stop;
     //private long numberOfSteps;
     private boolean solvable;
+    public String[][]board= null;
 
     protected void stopTimer() {
         if (start != 0) {
@@ -23,14 +24,16 @@ public abstract class SudokuAlgorithms {
     }
 
 
+
     public abstract boolean solveSudoku();
     public abstract String[][] printSolution(boolean solvable) throws IOException;
     public abstract String[][] getPuzzle();
     public final void solve() throws IOException {
+
         startTimer();
         solvable=solveSudoku();
         stopTimer();
-        String[][]puzzle=printSolution(solvable);
+        printSolution(solvable);
 
     }
 }
