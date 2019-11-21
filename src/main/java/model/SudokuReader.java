@@ -1,18 +1,20 @@
 package model;
 import java.io.BufferedReader;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.IOException;
 
 public class SudokuReader {
     public String[][] puzzle = null;
     public String[] domain = new String[0];
     public int side=0;
     public String[][]  board=null;
-    public void getPuzzle(String inputFileName) {
+    public void getPuzzle(String inputFileName) throws IOException {
 
         //List<String> domain = new ArrayList<>();
 
 
-        try {
+
             BufferedReader br = new BufferedReader(new FileReader(inputFileName));
 
             side = Integer.valueOf(br.readLine());
@@ -43,9 +45,7 @@ public class SudokuReader {
                 puzzle[rowNum] = readRow(line, side);
                 board[rowNum++] = readRow(line, side);
             }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+
 
 
         for (int i = 0; i < side; i++) {
